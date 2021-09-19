@@ -1,0 +1,133 @@
+// Testimonials
+.section-testimonial{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.5)), url('/img/bg_image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    & .testimonial-container{
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        @include respond(tab-land){
+            width: 70%;
+        }
+        @include respond(phone){
+            width: 90%;
+        }
+    }
+    & .left-btn{
+        width: 48px;
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        left: 3rem;
+        @include respond(phone){
+            width: 32px;
+            left: 10px;
+        }
+
+    }
+    & .right-btn{
+        width: 48px;
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        right: 3rem;
+        transform: rotate(-180deg);
+        
+        @include respond(phone){
+            width: 32px;
+            right: 10px;
+        }
+    }
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-item{
+        &.active{
+            display: flex;
+        }
+        height: 100%;
+        padding: 2rem;
+        // display: flex;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        &-top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit:cover;
+                opacity: 0;
+                animation: fadeIn 1s 0.2s ease forwards;
+            }
+            & h3{
+                font-family: $ff-karla;
+                font-size: 1.8rem;
+                color: #121212;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+                opacity: 0;
+                animation: fadeIn 0.8s 0.3s ease forwards;
+            }
+            & p{
+                font-family: $ff-karla;
+                font-size: 1.6rem;
+                color: #353535;
+                opacity: 0;
+                animation: fadeIn 0.8s 0.4s ease forwards;
+            }
+        }
+        &-heading{
+            font-family: $ff-karla;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 4rem;
+            color: #252525;
+            line-height: 1.5;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 0.8s 0.6s ease forwards;
+            
+            @include respond(phone){
+                font-size: 2.7rem;
+            }
+
+        }
+    }
+}
+
+
+// animation
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

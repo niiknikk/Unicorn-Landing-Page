@@ -1,0 +1,99 @@
+.logo-text{
+    font-family: $ff-karla;
+    font-size: 3.5rem;
+    color: $primary-color;
+    font-style: italic;
+    line-height: 1.5;
+}
+.heading-primary{
+    font-family: $ff-karla;
+    font-size: 9rem;
+    color: rgb(255,255,255);
+    line-height: 1.2;
+    text-align: center;
+    @include respond(tab-land){
+        font-size: 8.5rem;
+    }
+    @include respond(tab-port){
+        font-size: 8rem;
+    }
+    @include respond(phone){
+        font-size: 6rem;
+    }
+}
+.heading-secondary{
+    font-family: $ff-karla;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #252525;
+    line-height: 1.2;
+    text-align: center;
+
+    @include respond(tab-land){
+        font-size: 3.5rem;
+    }
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
+    @include respond(phone){
+        font-size: 2.7rem;
+    }
+}
+.heading-tertiary{
+    font-family: $ff-karla;
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: $white;
+    line-height: 1.2;
+    @include respond(phone){
+        font-size: 2rem;
+    }
+}
+
+.heading-footer-text{
+    width: 80%;
+    font-family: $ff-poppins;
+    font-size: 2.4rem;
+    color: rgb(255,255,255);
+    line-height: 1.5;
+    text-align: center;
+    @include respond(tab-port){
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    @include respond(phone){
+        font-size: 2rem;
+    }
+}
+
+.detail-content-heading{
+    font-family: $ff-karla;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111;
+    line-height: 1.2;
+    @include respond(phone){
+        font-size: 1.8rem;
+    }
+}
+
+.card-heading{
+    font-family: $ff-karla;
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    @include respond(phone){
+        font-size: 1.8rem;
+    }        
+}
+
+.paragraph-text{
+    font-family: $ff-poppins;
+    font-size: 1.6rem;
+    color: #252525;
+    line-height: 1.6;
+}

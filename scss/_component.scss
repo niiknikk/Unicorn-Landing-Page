@@ -1,0 +1,24 @@
+.btn{
+    font-family: $ff-karla;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    
+    &:focus,
+    &:active{
+        outline: 0;
+        border: 0;
+    }
+    &-form{
+        display: inline-block;
+        width: 100%;
+        margin: 2rem 0;
+        border: 0;
+        background-color: $primary-color;
+        color: $white;
+        padding: 1.3rem 1.5rem;
+
+        &:hover{
+            background-color: #a73432;
+        }
+    }
+}
